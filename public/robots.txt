@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radheshpai87.github.io/naitranavaratriSOP/sitemap.xml
