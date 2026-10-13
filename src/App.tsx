@@ -49,9 +49,9 @@ const performances: Performance[] = [
 
 const schedule: ScheduleStep[] = [
   { time: '9:00 AM onwards', label: 'Event begins', kind: 'start' },
-  { label: 'Opening music' },
-  { label: 'Opening dance' },
-  { label: 'Student performances' },
+  { time: '9:45 – 9:51 AM', label: 'Opening music' },
+  { time: '9:53 – 9:59 AM', label: 'Opening dance' },
+  { time: '10:01 AM – 12:23 PM', label: 'Student performances' },
   { time: '12:15 PM – 1:00 PM', label: 'Lunch break' },
   { time: '1:00 PM – 3:30 PM', label: 'Dandiya, Garba & DJ celebration' },
   { time: '3:30 PM', label: 'Programme ends', kind: 'end' },
