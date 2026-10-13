@@ -8,7 +8,7 @@ const event = {
   category: 'GARBA & DANDIYA',
   tagline: 'Tradition Meets the Beat',
   date: '15 October 2026',
-  venue: 'NIAT Mangalore',
+  venue: 'MILAGRES HALL COMPLEX, MANGALURU',
   start: '9:00 AM onwards',
   lunch: '12:15 PM – 1:00 PM',
   celebration: '1:00 PM – 3:30 PM',
@@ -50,13 +50,10 @@ const schedule: ScheduleStep[] = [
   { time: '3:30 PM', label: 'Programme ends', kind: 'end' },
 ]
 
-const communityHeads = [
-  { role: 'Core Head', name: 'Bindu Sagar' },
-  { role: 'Media', name: 'Srithan' },
-  { role: 'Disciplinary', name: 'Archana' },
-  { role: 'Backstage', name: 'Nanditha' },
-  { role: 'Stage', name: 'Snigdha' },
-  { role: 'Technical Committee', name: 'Nishan' },
+const contacts = [
+  { name: 'Bindu Sagar M', phone: '+91 97400 71409', tel: '+919740071409' },
+  { name: 'Nishan', phone: '+81478 52587', tel: '+8147852587' },
+  { name: 'Chethan Shetty', phone: '+8971389297', tel: '+8971389297' },
 ]
 
 const navigation = [
@@ -111,16 +108,16 @@ function App() {
 
       <main id="main">
         <section className="hero section-pad" id="home" aria-labelledby="hero-title">
-          <div className="hero-topline mono"><span>NIAT MANGALORE / CULTURAL CELEBRATION</span><span>15—10—2026</span></div>
+          <div className="hero-topline mono"><span>MANGALURU / CULTURAL CELEBRATION</span><span>15—10—2026</span></div>
           <div className="hero-title-wrap">
             <p className="hero-kicker">A DAY OF RHYTHM, RITUAL & COMMUNITY</p>
-            <h1 id="hero-title">NAITRA<br /><span>NAVARATRI</span><em>3.0</em></h1>
+            <h1 id="hero-title"><span className="hero-naitra">NAITRA</span><br /><span className="hero-navaratri">NAVARATRI</span><em>3.0</em></h1>
             <div className="hero-stamp" aria-hidden="true"><span>EST.</span><b>’26</b><span>TOGETHER<br />IN RHYTHM</span></div>
           </div>
           <div className="hero-bottomline">
             <p className="hero-category">{event.category}</p>
             <p className="hero-tagline">{event.tagline}</p>
-            <div className="hero-meta"><span>{event.date}</span><span>{event.venue}</span><span>{event.start}</span></div>
+            <div className="hero-meta"><span>{event.date}</span><ExternalLink href={event.venueUrl} className="hero-venue-link">{event.venue}</ExternalLink><span>{event.start}</span></div>
           </div>
           <a className="explore-link" href="#about"><span>EXPLORE THE EVENT</span><span aria-hidden="true">↓</span></a>
           <div className="hero-index mono"><span>01 / THE GATHERING</span><span>SCROLL TO DISCOVER</span></div>
@@ -132,7 +129,7 @@ function App() {
             <h2 id="about-title">A SHARED<br />RHYTHM.<br /><span>A SHARED</span><br />CELEBRATION.</h2>
             <div className="intro-text"><p className="intro-lead">Tradition meets the beat.</p><p>NAITRA NAVARATRI 3.0 brings student talent, music and dance together for a day shaped by Garba, Dandiya and community.</p><p>From the first prayer song to the final beat, every performance adds its own voice to the celebration.</p><a className="text-link" href="#performances">MEET THE LINEUP <span aria-hidden="true">↘</span></a></div>
           </div>
-          <div className="intro-foot mono"><span>15 OCTOBER 2026</span><span>NIAT MANGALORE</span><span>TRADITION / TALENT / TOGETHERNESS</span></div>
+          <div className="intro-foot mono"><span>15 OCTOBER 2026</span><ExternalLink href={event.venueUrl} className="intro-venue-link">{event.venue}</ExternalLink><span>TRADITION / TALENT / TOGETHERNESS</span></div>
         </section>
 
         <section className="performances section-pad" id="performances" aria-labelledby="performances-title">
@@ -149,7 +146,7 @@ function App() {
         <section className="celebration section-pad" aria-labelledby="celebration-title">
           <div className="celebration-top mono"><span>THE DAY TURNS TO DANCE</span><span>03 — EVENT HIGHLIGHT</span></div>
           <p className="eyebrow">EVERYONE ON THE FLOOR</p>
-          <h2 id="celebration-title">DANDIYA,<br />GARBA <span>&</span> DJ</h2>
+          <h2 id="celebration-title">DANDIYA,<br /><span className="celebration-garba">GARBA</span> <span>&</span> DJ</h2>
           <div className="celebration-bottom"><p className="celebration-time">{event.celebration}</p><p>All students, mentors and faculty members are cordially invited to join the celebration.</p><p className="concludes">The programme concludes at {event.end}.</p></div>
           <span className="celebration-asterisk" aria-hidden="true">✳</span>
         </section>
@@ -172,12 +169,12 @@ function App() {
           <div className="venue-grid"><div><h2 id="venue-title">MEET US<br /><span>THERE.</span></h2><p className="venue-note">A day of culture, movement and shared celebration.</p></div><div className="venue-details"><span className="eyebrow">VENUE</span><ExternalLink href={event.venueUrl} className="venue-name">{event.venue}<span aria-hidden="true">↗</span></ExternalLink><div className="venue-detail-row"><div><span className="eyebrow">DATE</span><p>{event.date}</p></div><div><span className="eyebrow">EVENT START</span><p>{event.start}</p></div></div><ExternalLink href={event.venueUrl} className="map-link">VIEW VENUE ON MAPS <span aria-hidden="true">↗</span></ExternalLink></div></div>
         </section>
 
-        <section className="community section-pad" aria-labelledby="community-title">
+        <section className="community section-pad" aria-labelledby="contact-title">
           <div className="community-top"><span className="eyebrow">07 — PEOPLE WHO MAKE IT HAPPEN</span><span className="community-rule" /></div>
-          <div className="community-grid"><div className="community-heads"><h2 id="community-title">COMMUNITY<br /><span>HEADS</span></h2><div className="heads-list">{communityHeads.map((head) => <div className="head-row" key={head.role}><span>{head.role}</span><strong>{head.name}</strong></div>)}</div></div>
-            <div className="community-connect"><div className="connect-block"><span className="eyebrow">NIAT MANGALORE</span><h3>MEDIA</h3><p className="connect-caption">FOLLOW US ON INSTAGRAM</p><ExternalLink href={event.instagramUrl} className="social-link">@niatmangalore.media <span aria-hidden="true">↗</span></ExternalLink></div><div className="connect-block venue-connect"><span className="eyebrow">VISIT THE VENUE</span><ExternalLink href={event.venueUrl} className="connect-venue">NIAT MANGALORE <span aria-hidden="true">↗</span></ExternalLink><ExternalLink href={event.venueUrl} className="footer-map-link">VIEW VENUE ON MAPS <span aria-hidden="true">↗</span></ExternalLink></div></div>
+          <div className="community-grid"><div className="community-heads"><h2 id="contact-title">CONTACT<br /><span>US</span></h2><div className="contacts-list">{contacts.map((contact) => <div className="contact-row" key={contact.name}><strong>{contact.name}</strong><a href={`tel:${contact.tel}`}>{contact.phone}</a></div>)}</div></div>
+            <div className="community-connect"><div className="connect-block"><span className="eyebrow">NIAT MANGALORE</span><h3>MEDIA</h3><p className="connect-caption">FOLLOW US ON INSTAGRAM</p><ExternalLink href={event.instagramUrl} className="social-link">@niatmangalore.media <span aria-hidden="true">↗</span></ExternalLink></div><div className="connect-block venue-connect"><span className="eyebrow">VISIT THE VENUE</span><ExternalLink href={event.venueUrl} className="connect-venue">{event.venue} <span aria-hidden="true">↗</span></ExternalLink><ExternalLink href={event.venueUrl} className="footer-map-link">VIEW VENUE ON MAPS <span aria-hidden="true">↗</span></ExternalLink></div></div>
           </div>
-          <div className="community-foot mono"><span>NIAT MANGALORE / 2026</span><span>IN COMMUNITY, WE CELEBRATE.</span></div>
+          <div className="community-foot mono"><span>MANGALURU / 2026</span><span>IN COMMUNITY, WE CELEBRATE.</span></div>
         </section>
       </main>
 
