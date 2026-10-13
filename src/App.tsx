@@ -309,8 +309,7 @@ function App() {
         <section className="schedule-section section-pad" id="schedule" aria-labelledby="schedule-title">
           <div className="section-label"><span className="eyebrow">04 — THE FLOW OF THE DAY</span><span className="label-rule" /></div>
           <div className="schedule-heading"><h2 id="schedule-title">EVENT<br /><span>SCHEDULE</span></h2><p>One day, unfolding<br />in rhythm.</p></div>
-          <div className="timeline-scroll" role="region" aria-label="Event schedule timeline" tabIndex={0}><ol className="timeline">{schedule.map((step, index) => <ScheduleItem key={`${step.label}-${index}`} step={step} index={index} />)}</ol></div>
-          <p className="timeline-hint mono">SCROLL TO FOLLOW THE DAY <span aria-hidden="true">→</span></p>
+          <div className="timeline-wrap" role="region" aria-label="Event schedule timeline"><ol className="timeline">{schedule.map((step, index) => <ScheduleItem key={`${step.label}-${index}`} step={step} index={index} />)}</ol></div>
         </section>
 
         <section className="venue-section section-pad" id="venue" aria-labelledby="venue-title">
