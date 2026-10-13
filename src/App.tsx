@@ -148,7 +148,7 @@ function App() {
           <div className="section-label"><span className="eyebrow">01 — ABOUT THE EVENT</span><span className="label-rule" /></div>
           <div className="intro-grid">
             <h2 id="about-title">A SHARED<br />RHYTHM.<br /><span>A SHARED</span><br />CELEBRATION.</h2>
-            <div className="intro-text"><p className="intro-lead">Tradition meets the beat.</p><p>NAITRA NAVARATRI 3.0 brings student talent, music and dance together for a day shaped by Garba, Dandiya and community.</p><p>From the first prayer song to the final beat, every performance adds its own voice to the celebration.</p><a className="text-link" href="#performances">MEET THE LINEUP <span aria-hidden="true">↘</span></a></div>
+            <div className="intro-text"><p className="intro-lead">Tradition meets the beat.</p><p>NAITRA NAVARATRI 3.0 brings student talent, music and dance together for a day shaped by Garba, Dandiya and community at Yenepoya School of Engineering and Technology Mangalore.</p><p>From the first prayer song to the final beat, every performance adds its own voice to the celebration.</p><a className="text-link" href="#performances">MEET THE LINEUP <span aria-hidden="true">↘</span></a></div>
           </div>
           <div className="intro-foot mono"><span>15 OCTOBER 2026</span><ExternalLink href={event.venueUrl} className="intro-venue-link">{event.venue}</ExternalLink><span>TRADITION / TALENT / TOGETHERNESS</span></div>
         </section>
@@ -326,7 +326,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="site-footer section-pad"><a href="#home" className="footer-name">NAITRA NAVARATRI 3.0 <span>— GARBA & DANDIYA</span></a><p>{event.tagline}</p><a href="#home" className="back-top">BACK TO TOP ↑</a></footer>
+      <footer className="site-footer section-pad"><a href="#home" className="footer-name">NAITRA NAVARATRI 3.0 <span>— GARBA & DANDIYA</span></a><p>{event.tagline} · Yenepoya School of Engineering & Technology</p><a href="#home" className="back-top">BACK TO TOP ↑</a></footer>
     </>
   )
 }
