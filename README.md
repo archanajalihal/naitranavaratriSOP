@@ -1,6 +1,6 @@
 # NAITRA NAVARATRI 3.0
 
-> Official interactive web experience and schedule guide for NAITRA NAVARATRI 3.0 — Garba, Dandiya & Cultural Fest at NIAT Mangalore (AJ Institute of Engineering & Technology).
+> Official interactive web experience and schedule guide for NAITRA NAVARATRI 3.0 — Garba, Dandiya & Cultural Fest at NIAT Mangalore (Yenepoya School of Engineering and Technology Mangalore).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-crimson.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18-blue.svg)](https://react.dev)
@@ -19,19 +19,19 @@ The interface prioritizes instant information hierarchy, tactile typography, flu
 
 ## Key Features
 
-- **Hero & Live Schedule Status**: Dynamic celebration headers detailing event date (`October 14, 2026`), kickoff time (`9:00 AM onwards`), and venue location.
+- **Hero & Live Schedule Status**: Dynamic celebration headers detailing event date (`15 October 2026`), kickoff time (`9:00 AM onwards`), and venue location (`Milagres Hall Complex, Mangaluru`).
 - **Interactive Stage Showcase (Section 02)**:
   - 18 curated acts catalogued from the official schedule.
   - Category filters: `ALL ACTS`, `DANCE`, `MUSIC & VOCALS`, and `PILINALIKE`.
   - Split-stage interactive spotlight displaying performance order, lead performers, song title, and genres.
 - **Lunch & Celebration Highlights (Section 03)**:
-  - Detailed callouts for mid-day community dining (`1:30 PM`).
-  - Dedicated spotlight for the evening Garba, Dandiya, and DJ celebration (`3:30 PM`).
+  - Detailed callouts for mid-day community dining (`12:15 PM – 1:00 PM`).
+  - Dedicated spotlight for the evening Garba, Dandiya, and DJ celebration (`1:00 PM – 3:30 PM`).
 - **Full-Width Flow of the Day (Section 04)**:
   - Responsive 7-stage chronological timeline without horizontal scrollbars.
   - Seamless desktop multi-column progression and mobile vertical track.
 - **Venue & Map Integration (Section 05)**:
-  - Direct directions to the AJ Institute of Engineering & Technology campus via Google Maps.
+  - Direct directions to the venue via Google Maps.
 - **Community Leadership & Media (Section 06)**:
   - Direct telephone links for student event coordinators.
   - Direct link to the `@niatmangalore.media` Instagram channel.
