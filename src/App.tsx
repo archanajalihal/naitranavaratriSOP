@@ -52,8 +52,8 @@ const schedule: ScheduleStep[] = [
 
 const contacts = [
   { name: 'Bindu Sagar M', phone: '+91 97400 71409', tel: '+919740071409' },
-  { name: 'Nishan', phone: '+81478 52587', tel: '+8147852587' },
-  { name: 'Chethan Shetty', phone: '+8971389297', tel: '+8971389297' },
+  { name: 'Nishan', phone: '+91 81478 52587', tel: '+918147852587' },
+  { name: 'Chethan Shetty', phone: '+91 8971389297', tel: '+918971389297' },
 ]
 
 const navigation = [

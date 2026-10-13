@@ -25,3 +25,12 @@
 
 @media(max-width:900px){.hero h1 .hero-naitra{letter-spacing:.005em}.hero h1 .hero-navaratri{letter-spacing:-.045em}}
 @media(max-width:680px){.hero-stamp{top:0;right:0;width:82px;height:82px}.hero h1 .hero-naitra{letter-spacing:0}.hero h1 .hero-navaratri{letter-spacing:-.055em}.celebration h2 .celebration-garba{color:#ba3844}.garba-main h2{letter-spacing:-.035em}.community-heads h2{letter-spacing:.004em}.contact-row{gap:4px;padding:15px 0}.contact-row a{min-height:44px;padding-right:14px}.connect-venue{font-size:clamp(17px,5.3vw,24px);overflow-wrap:anywhere}}
+
+/* Fine type spacing for the performance list and replacement contact heading. */
+.performances-heading h2{letter-spacing:-.025em}
+.performance-copy h3{letter-spacing:.018em}
+.performance-copy .programme{letter-spacing:.12em}
+.performances .section-label .eyebrow{letter-spacing:.14em}
+.lineup-head{letter-spacing:.12em}
+.community-heads h2{letter-spacing:.018em}
+@media(max-width:680px){.intro h2{font-size:clamp(56px,17vw,110px)}.performances-heading h2{font-size:15.2vw;letter-spacing:-.035em}.performance-copy h3{letter-spacing:.012em}.community-heads h2{letter-spacing:.006em}}
