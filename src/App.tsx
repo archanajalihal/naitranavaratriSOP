@@ -30,7 +30,7 @@ const performances: Performance[] = [
   { id: 1, performer: 'Manushree', programme: 'Solo Prayer Song', time: '9:45 – 9:51 AM', category: 'music' },
   { id: 2, performer: 'Poornanda', programme: 'Solo Dance (Pilinalike)', time: '9:53 – 9:59 AM', category: 'special' },
   { id: 3, performer: 'Yashaswini & Team', programme: 'Group Dance', time: '10:01 – 10:09 AM', category: 'dance' },
-  { id: 4, performer: 'Dhanushree', programme: 'Duo Performance', time: '10:11 – 10:17 AM', category: 'dance' },
+  { id: 4, performer: 'Dhanushree & Team', programme: 'Duo Performance', time: '10:11 – 10:17 AM', category: 'dance' },
   { id: 5, performer: 'Riya Gowder & Team', programme: 'Group Dance', time: '10:19 – 10:27 AM', category: 'dance' },
   { id: 6, performer: 'Aiza Fathima & Team', programme: 'Group Song', time: '10:29 – 10:37 AM', category: 'music' },
   { id: 7, performer: 'Raksha & Team', programme: 'Group Dance', time: '10:39 – 10:47 AM', category: 'dance' },
